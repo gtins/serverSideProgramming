@@ -55,10 +55,13 @@ var porcentagemBons = (bons / pessoas) * 100
 //media das idades de quem falou otimo
 var mediaIdadesOtimos = 0;
 var idadesOtimos = 0;
+var cont = 0;
 for (let i = 0; i < usuarios.length; i++){
-    if (usuarios[i].score.toLowerCase() === 'otimo')
+    if (usuarios[i].score.toLowerCase() === 'otimo'){
     idadesOtimos += parseInt(usuarios[i].idade); //parse int?
+    cont++;
+    }
 }
 
-mediaIdadesOtimos = (idadesOtimos / usuarios.length);
+mediaIdadesOtimos = (idadesOtimos / cont);
 console.log(mediaIdadesOtimos);
