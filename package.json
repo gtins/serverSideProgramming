@@ -1,14 +1,5 @@
 {
-  "name": "projetojs",
-  "version": "1.0.0",
-  "description": "projetos de javascript",
-  "main": "resultado.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "prompt-sync": "^4.2.0"
   }
 }
