@@ -14,11 +14,13 @@ for (let i = 0; i < definicoes.pessoas; i++) {
 const porcentagens = processamento.calcularPorcentagens();
 const mediaIdadesOtimos = processamento.calcularMediaIdadesOtimos();
 const porcentagensCidades = processamento.calcularPorcentagemCidades();
+const regulares = processamento.retornaRegulares();
 
 console.log('Porcentagens de opinião:');
-console.log(`Ótimos: ${porcentagens.porcentagemOtimos.toFixed(2)}%`);
-console.log(`Bons: ${porcentagens.porcentagemBons.toFixed(2)}%`);
-console.log(`Regulares: ${porcentagens.porcentagemRegulares.toFixed(2)}%`);
-console.log(`Média de idades de ótimos: ${mediaIdadesOtimos.toFixed(2)}`);
+console.log('Ótimos: ' +porcentagens.porcentagemOtimos.toFixed(2) + '%');
+console.log('Bons: ' +porcentagens.porcentagemBons.toFixed(2) + '%');
+console.log('Regulares: ' +porcentagens.porcentagemRegulares.toFixed(2) + '%');
+console.log('Média de idades de ótimos: ' +mediaIdadesOtimos.toFixed(2) + '%');
 console.log('Porcentagens de cidades:');
 console.log(porcentagensCidades);
+console.log('Contagem de regulares: ' +regulares);
