@@ -34,6 +34,10 @@ function calcularPorcentagens() {
   };
 }
 
+function retornaRegulares(){
+    return definicoes.regulares;
+}
+
 function calcularMediaIdadesOtimos() {
   let mediaIdadesOtimos = 0;
   let idadesOtimos = 0;
@@ -82,4 +86,5 @@ module.exports = {
   calcularPorcentagens,
   calcularMediaIdadesOtimos,
   calcularPorcentagemCidades,
+  retornaRegulares,
 };
